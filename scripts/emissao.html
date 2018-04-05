@@ -16,14 +16,13 @@
 	<main>
      <nav>
     <div class="nav-wrapper teal">
-      <a href="#!" class="brand-logo center">Sistema da Cooperativa de Cereais</a>
+      <a href="#!" class="brand-logo center">Sistema da Cooperativa de Cereais - Cooperados</a>
       <ul class="left hide-on-med-and-down">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="cooperado.html">Cooperados</a></li>
-        <li class="active"><a href="caminhao.html">Caminhão</a></li>
-        <li><a href="pesagem.html">Pesagem</a></li>
+        <li ><a href="./index.html">Home</a></li>
+        <li class="active"><a href="cooperado.html">Cooperados</a></li>
+        <li><a href="caminhao.html">Caminhão</a></li>
         <li><a href="fila.html">Fila</a></li>
-       </ul>
+      </ul>
     </div>
   </nav>
     
@@ -42,43 +41,90 @@
 	<div class="container">
     	
       <div class="z-depth-1 grey lighten-4 row" style="  width:100%; display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
-        <h5 class="deep-orange-text accent-4-text center"> Cadastrar Caminhão</h5>
-		<div class="row center">
-        	
+        <h5 class="deep-orange-text accent-4-text center">Cooperados</h5>
+		<div class="row">
+        	<div class="col s5">
+             <h5 class="teal-text accent-4-text center">Lista</h5>
+           	<div class="row">
+            <div class="col scroll  s12">
+            
+            	<a class="waves-effect waves-light modal-trigger black-text" href="#modal1">
+                <div class="row" style="border-bottom:1px solid #AAA; padding:10px;">
+               	<div class="col s4" style="padding-top:10px;"> 
+            	<img src="./assets/imagens/fotos/faz02.jpg" alt="" width="120" >
+      			</div>
+                <div class="col s7">
+                	<div style="padding-left:10px;"> 
+            	        <h5>Bruno Mezenga</h5>
+      					<p>Fazenda Mezenga
+                        <br>
+         				Maringá-PR
+      					</p>
+                     </div>
+      			</div>
+                <div class="col s1" style="padding-top:40px;"> 
+            		<i class="material-icons teal-text">chevron_right</i>
+    			</div>
+                </div>
+                </a>
+                
+                <a class="waves-effect waves-light modal-trigger black-text" href="#modal2">
+                <div class="row" style="border-bottom:1px solid #AAA; padding:10px;">
+               	<div class="col s4" style="padding-top:10px;"> 
+            	<img src="./assets/imagens/fotos/faz03.jpg" alt="" width="120" >
+      			</div>
+                <div class="col s7">
+                	<div style="padding-left:10px;"> 
+            	        <h5>Geremias Berdinazzi</h5>
+      					<p>Fazenda Berdinazzi
+                        <br>
+         				Maringá-PR
+      					</p>
+                     </div>
+      			</div>
+                <div class="col s1" style="padding-top:40px;"> 
+            		<i class="material-icons teal-text">chevron_right</i>
+    			</div>
+                </div>
+                </a>
+            
+            </div>
+            </div>
+            </div> 
             <div class="col s1">
             </div>
         	<div class="col s6">
-            
-          <form class="col s12" method="post" class="center-align">
-            <div class='row' >
+             <h5 class="teal-text accent-4-text center">Cadastro</h5>
+          <form class="col s12" method="post">
+            <div class='row'>
               <div class='col s12'>
               </div>
             </div>
 
             <div class='row'>
               <div class='input-field col s12'>
-                <input class='validate' type='text' name='marca' id='marca' />
-                <label for='marca'>Marca</label>
+                <input class='validate' type='text' name='nome' id='nome' />
+                <label for='nome'>Nome Completo</label>
               </div>
 
 			  <div class='input-field col s12'>
-                <input class='validate' type='text' name='modelo' id='modelo' />
-                <label for='modelo'>Modelo</label>
+                <input class='validate' type='text' name='rg' id='rg' />
+                <label for='rg'>RG</label>
               </div>
 
               <div class='input-field col s12'>
-                <input class='validate' type='text' name='placa' id='placa' />
-                <label for='placa'>Placas</label>
+                <input class='validate' type='text' name='fazenda' id='fazenda' />
+                <label for='fazenda'>Nome da fazenda</label>
               </div>
 
               <div class='input-field col s12'>
-                <input class='validate' type='text' name='proprietario' id='proprietario' />
-                <label for='proprietario'>Proprietário</label>
+                <input class='validate' type='text' name='cidade' id='cidade' />
+                <label for='cidade'>Cidade</label>
               </div>
 
 				<div class='input-field col s12'>
-                <input class='validate' type='text' name='capacidade' id='capacidade' />
-                <label for='capacidade'>Capacidade(em toneladas)</label>
+                <input class='validate' type='text' name='estado' id='estado' />
+                <label for='estado'>Estado</label>
               </div>
               
               <div class='row'>
@@ -200,31 +246,30 @@
     
     <div id="modal3" class="modal">
     <div class="modal-content">
-      <h3 align="center">Cadastro efetuado com sucesso!</h3>
-      
+      <h3 align="center">Novo cadastro efetuado com sucesso!</h3>
+      <h5 align="center">Cooperado de Número 003</h5>
+      <img align="middle" src="./assets/imagens/fotos/faz01.jpg" width="120" >
       <p><div class='input-field col s12'>
-                <input class='validate' type='text' name='marca' id='marca' />
-                <label for='marca'>Marca</label>
+                <input class='validate' type='text' name='nome' id='nome' />
+                <label for='nome'>Nome Completo: Coronel Boanerges </label>
+          </div>
+       </p>
+      <p><div class='input-field col s12'>
+                <input class='validate' type='text' name='rg' id='rg' />
+                <label for='rg'>RG: 9.876.543</label>
               </div>
-
-			  <div class='input-field col s12'>
-                <input class='validate' type='text' name='modelo' id='modelo' />
-                <label for='modelo'>Modelo</label>
-              </div>
-
-              <div class='input-field col s12'>
-                <input class='validate' type='text' name='placa' id='placa' />
-                <label for='placa'>Placas</label>
-              </div>
-
-              <div class='input-field col s12'>
-                <input class='validate' type='text' name='proprietario' id='proprietario' />
-                <label for='proprietario'>Proprietário</label>
-              </div>
-
-				<div class='input-field col s12'>
-                <input class='validate' type='text' name='capacidade' id='capacidade' />
-                <label for='capacidade'>Capacidade(em toneladas)</label>
+</p>
+      <p><div class='input-field col s12'>
+                <input class='validate' type='text' name='fazenda' id='fazenda' />
+                <label for='fazenda'>Nome da fazenda: Fazenda Boanerges</label>
+              </div></p>
+      <p><div class='input-field col s12'>
+                <input class='validate' type='text' name='cidade' id='cidade' />
+                <label for='cidade'>Cidade: Maringá</label>
+              </div></p>
+      <p><div class='input-field col s12'>
+                <input class='validate' type='text' name='estado' id='estado' />
+                <label for='estado'>Estado: Paraná</label>
               </div></p>
     </div>
     <div class="modal-footer">
